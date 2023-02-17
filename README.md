@@ -5,6 +5,15 @@
 * Create an Account at https://fly.io
 * Install and Authenticate the CLI https://fly.io/docs/flyctl/
 
+0. Checkout `thursday-tryout`. main contains the "solution".
+1. Run `fly launch` in the repo root.
+2. Follow the steps, say YES to a postgres instance and NO to Redis cache
+3. Save the connection string that is logged somewhere you'll need it later
+4. When everything is up and running follow https://fly.io/docs/postgres/connecting/connecting-external/ to make your DB externally accessible. Do this in the ./fly-deploy-demo-db folder
+5. Create a .env file in the repo root put in the public connection string in DATABASE_URL env var.
+6. Run `npx prisma db seed` to seed the database
+7. Visit the page and look at your ducks.
+
 ---
 🐣🐣🦆
 ---
